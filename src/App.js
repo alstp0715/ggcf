@@ -1,16 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomeView from "./views/HomeView";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <div className="asd">
-
-        </div>
-      </header>
-    </div>
+  <BrowserRouter>
+      <Routes>
+          <Route path="/" element={<HomeView />} />
+      </Routes>
+  </BrowserRouter>
   );
-}
+};
+
 
 export default App;
