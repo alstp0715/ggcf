@@ -1,8 +1,11 @@
+import Slider from "./Slider";
+
 const Main = () => {
+
     return (
-    <section>
-        main
-    </section>
+        <section className="main">
+            <Slider />
+        </section>
     );
 };
 export default Main;

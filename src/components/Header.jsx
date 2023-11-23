@@ -19,10 +19,10 @@ const Header = () => {
                     </div>
                     <nav>
                         <ul>
-                            <li><a href="">예술</a></li>
-                            <li><a href="">지역</a></li>
-                            <li><a href="">뮤지엄</a></li>
-                            <li><a href="">유산</a></li>
+                            <li>예술</li>
+                            <li>지역</li>
+                            <li>뮤지엄</li>
+                            <li>유산</li>
                         </ul>
                     </nav>
                 </div>

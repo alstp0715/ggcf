@@ -1,0 +1,25 @@
+section.main {
+    max-width: $siteSize;
+    margin: 30px auto 0;
+
+    .slide-wrap {
+        margin-top: 30px;
+        padding: 0 15px;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            gap: 33px;
+
+            li {
+                flex: 1;
+
+                img {
+                    background-color: #000;
+                    width: 100%;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
