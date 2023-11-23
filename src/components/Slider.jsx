@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import exhibitionsData from "../data/exhibitionsData.json";
-import DetailView from "../views/DetailView";
 
 const Slider = () => {
     return (

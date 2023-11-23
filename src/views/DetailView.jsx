@@ -16,7 +16,6 @@ const DetailView = () => {
             <h2>{selectedItem.name}</h2>
             <p>Date: {selectedItem.date}</p>
             <img src={selectedItem.imageSrc} alt="" />
-            {/* 그 외의 상세 정보 표시 */}
         </div>
     );
 };
