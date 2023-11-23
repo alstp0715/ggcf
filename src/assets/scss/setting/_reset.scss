@@ -26,10 +26,10 @@ html {
 }
 
 body {
-	font-family: 'Noto Sans KR', 'Malgun Gothic', '맑은 고딕', Roboto, 'Helvetica Neue', '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', AppleSDGothicNeo, dotum, gulim, Helvetica, Arial, sans-serif;
+	font-family: 'notosans';
     font-weight: 400;
 	font-size: 1.6rem;
-	color:#495057;
+	color:#222;
 	margin:0;
 	padding:0;
 	box-sizing:border-box;
@@ -84,3 +84,6 @@ input::-webkit-search-results-decoration { display: none; }
 input{-webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none;}
 input, select{-webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; border-radius:0;}
 input[type=text], select, textarea{-webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; border-radius:0; }
+
+// select
+select{background-color: transparent; border: 0;}

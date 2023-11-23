@@ -3,13 +3,14 @@ const Header = () => {
         <header className="header">
                 <div className="header__top">
                     <ul>
-                        <li>로그인</li>
+                        <li><a href="">로그인</a></li>
                         <li>
                             <select name="" id="">
                                 <option value="">한국어</option>
                             </select>
                         </li>
-                        <li>검색</li>
+                        <li><a href="">검색</a></li>
+                        <li><a href="">관리자</a></li>
                     </ul>
                 </div>
                 <div className="header__bottom">
@@ -18,10 +19,10 @@ const Header = () => {
                     </div>
                     <nav>
                         <ul>
-                            <li>예술</li>
-                            <li>지역</li>
-                            <li>뮤지엄</li>
-                            <li>유산</li>
+                            <li><a href="">예술</a></li>
+                            <li><a href="">지역</a></li>
+                            <li><a href="">뮤지엄</a></li>
+                            <li><a href="">유산</a></li>
                         </ul>
                     </nav>
                 </div>
