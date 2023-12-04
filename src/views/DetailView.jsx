@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import Header from '../components/Header';
 import exhibitionsData from '../data/exhibitionsData.json';
 
 const DetailView = () => {
@@ -12,11 +13,14 @@ const DetailView = () => {
     }
 
     return (
+        <>
+        <Header />
         <div>
             <h2>{selectedItem.name}</h2>
             <p>Date: {selectedItem.date}</p>
             <img src={selectedItem.imageSrc} alt="" />
         </div>
+        </>
     );
 };
 
