@@ -1,13 +1,15 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomeView from "./views/HomeView";
-import DetailView from "./views/DetailView";
+import LayoutView from "./views/LayoutView";
+import GalleryDetailView from "./views/gallery/GalleryDetailView";
+import NoticeDetailView from "./views/notice/NoticeDetailView";
 
 const App = () => {
   return (
   <BrowserRouter>
       <Routes>
-          <Route path="/" element={<HomeView />} />
-          <Route path="/detail/:id" element={<DetailView />} />
+          <Route path="/" element={<LayoutView />} />
+          <Route path="/gallery/:id" element={<GalleryDetailView />} />
+          <Route path="/notice/:id" element={<NoticeDetailView />} />
       </Routes>
   </BrowserRouter>
   );

@@ -1,23 +1,35 @@
-import { Link } from "react-router-dom";
-import exhibitionsData from "../data/exhibitionsData.json";
+import React from "react";
 
-const Slider = () => {
+import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+const Slider = ({ galleryData }) => {
+    const swiperParams = {
+        navigation: true,
+        slidesPerView: 4,
+        spaceBetween: 30
+    };
+
     return (
-        <div className="slide-wrap">
-            <ul>
-                {exhibitionsData.map((item) => (
-                    <li key={item.id}>
-                        <Link to={`../detail/${item.id}`}>
-                            <img src={item.imageSrc} alt="" />
-                            <p className="name">{item.name}</p>
-                            <p className="date">{item.date}</p>
-                        </Link>
-                    </li>
-                ))}
-            </ul>
+        <div className="item slider">
+            <p className="title"><a href="">갤러리</a></p>
+            <div className="swiper-container">
+                <Swiper {...swiperParams}>
+                    {galleryData && galleryData.map((item) => (
+                        <SwiperSlide>
+                            <Link to={`../gallery/${item.id}`}>
+                                <img src={item.imageSrc} alt="" />
+                                <p className="name">{item.title}</p>
+                                <p className="date">{item.date}</p>
+                            </Link>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </div>
         </div>
     );
 };
-
 
 export default Slider;
