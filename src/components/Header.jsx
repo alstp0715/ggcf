@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
 
 const Header = () => {
     const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
@@ -11,8 +12,8 @@ const Header = () => {
     };
 
     useEffect(() => {
-        window.addEventListener('resize', updateWindowSize);
         updateWindowSize();
+        window.addEventListener('resize', updateWindowSize);
         return () => {
             window.removeEventListener('resize', updateWindowSize);
         };
@@ -38,7 +39,7 @@ const Header = () => {
                 </div>
                 <nav>
                     <ul>
-                        <li>갤러리게시판</li>
+                        <li><Link to={`../gallery`}>갤러리게시판</Link></li>
                         <li>일정표</li>
                     </ul>
                 </nav>
@@ -49,3 +50,4 @@ const Header = () => {
 };
 
 export default Header;
+

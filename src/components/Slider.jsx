@@ -18,7 +18,7 @@ const Slider = ({ galleryData }) => {
             <div className="swiper-container">
                 <Swiper {...swiperParams}>
                     {galleryData && galleryData.map((item) => (
-                        <SwiperSlide>
+                        <SwiperSlide key={item.id}>
                             <Link to={`../gallery/${item.id}`}>
                                 <img src={item.imageSrc} alt="" />
                                 <p className="name">{item.title}</p>
