@@ -2,20 +2,20 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Data from '../../data/Data.json';
 
-const GalleryList = () => {
-    const { galleryData } = Data; // 객체 비구조화 사용
+const NoticeList = () => {
+    const { noticeData } = Data; // 객체 비구조화 사용
     useEffect(() => {
         return () => {
-            console.log(galleryData);
+            console.log(noticeData);
         };
-    }, [galleryData]);
+    }, [noticeData]);
 
     return (
         <div>
             <ul>
-                {galleryData.map((item) => (
+                {noticeData.map((item) => (
                     <li key={item.id}>
-                        <Link to={`../gallery/${item.id}`}>
+                        <Link to={`../notice/${item.id}`}>
                             <p>{item.title}</p>
                             <p>{item.date}</p>
                             <p>{item.imageSrc}</p>
@@ -27,4 +27,4 @@ const GalleryList = () => {
     );
 };
 
-export default GalleryList;
+export default NoticeList;

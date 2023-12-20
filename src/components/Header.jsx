@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
-    const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
+    const [windowSize, setWindowSize] = useState({ width: 0, height: 0 })
 
     const updateWindowSize = () => {
         setWindowSize({
@@ -14,29 +14,35 @@ const Header = () => {
                 window.innerHeight ||
                 document.documentElement.clientHeight ||
                 document.body.clientHeight,
-        });
-    };
+        })
+    }
 
     useEffect(() => {
-        updateWindowSize();
-        window.addEventListener('resize', updateWindowSize);
+        updateWindowSize()
+        window.addEventListener('resize', updateWindowSize)
         return () => {
-            window.removeEventListener('resize', updateWindowSize);
-        };
-    }, []);
+            window.removeEventListener('resize', updateWindowSize)
+        }
+    }, [])
 
     return (
         <header className="header">
             <div className="header__top">
                 {/* <ul>
-                    <li><a href="">로그인</a></li>
+                    <li>
+                        <a href="">로그인</a>
+                    </li>
                     <li>
                         <select name="" id="">
                             <option value="">한국어</option>
                         </select>
                     </li>
-                    <li><a href="">검색</a></li>
-                    <li><a href="">관리자</a></li>
+                    <li>
+                        <a href="">검색</a>
+                    </li>
+                    <li>
+                        <a href="">관리자</a>
+                    </li>
                 </ul> */}
             </div>
             <div className="header__bottom">
@@ -56,7 +62,7 @@ const Header = () => {
                 가로폭: {windowSize.width}px, 높이: {windowSize.height}px
             </p>
         </header>
-    );
-};
+    )
+}
 
-export default Header;
+export default Header
