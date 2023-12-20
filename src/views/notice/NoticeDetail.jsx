@@ -8,7 +8,9 @@ const DetailView = () => {
         return <div>데이터가 유효하지 않습니다.</div>;
     }
 
-    const selectedItemNotice = Data.noticeData.find(item => String(item.id) === id);
+    const selectedItemNotice = Data.noticeData.find(
+        (item) => String(item.id) === id
+    );
 
     if (selectedItemNotice) {
         // 선택된 항목이 공지 데이터인 경우

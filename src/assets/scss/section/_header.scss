@@ -2,7 +2,7 @@
     width: 100%;
     background-color: #f2f2f2;
 
-    .test-width{
+    .test-width {
         position: fixed;
         top: 0;
         left: 0;
@@ -28,7 +28,7 @@
 
                 &::after {
                     position: absolute;
-                    content: "";
+                    content: '';
                     width: 1px;
                     height: 10px;
                     border-right: 1px solid #ccc;
@@ -41,7 +41,6 @@
                     content: none;
                 }
             }
-
         }
     }
 
@@ -76,7 +75,6 @@
                     cursor: pointer;
                 }
             }
-
         }
     }
 }

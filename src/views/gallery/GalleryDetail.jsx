@@ -8,8 +8,10 @@ const DetailView = () => {
         return <div>데이터가 유효하지 않습니다.</div>;
     }
 
-    const selectedItemGallery = Data.galleryData.find(item => String(item.id) === id);
-    
+    const selectedItemGallery = Data.galleryData.find(
+        (item) => String(item.id) === id
+    );
+
     if (selectedItemGallery) {
         // 선택된 항목이 갤러리 데이터인 경우
         return (
