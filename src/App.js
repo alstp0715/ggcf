@@ -1,13 +1,11 @@
-import { StrictMode } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import LayoutView from './views/LayoutView';
-import GalleryList from './views/gallery/GalleryList';
-import GalleryDetail from './views/gallery/GalleryDetail';
-import NoticeDetail from './views/notice/NoticeDetail';
+import LayoutView from './views/LayoutView.jsx';
+import GalleryList from './views/gallery/GalleryList.jsx';
+import GalleryDetail from './views/gallery/GalleryDetail.jsx';
+import NoticeDetail from './views/notice/NoticeDetail.jsx';
 
 const App = () => {
   return (
-    <StrictMode>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LayoutView />} />
@@ -16,7 +14,6 @@ const App = () => {
           <Route path="/notice/:id" element={<NoticeDetail />} />
         </Routes>
       </BrowserRouter>
-    </StrictMode>
   );
 };
 

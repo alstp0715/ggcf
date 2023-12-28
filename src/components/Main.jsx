@@ -1,10 +1,10 @@
-import Notice from './Notice';
-import Slider from './Slider';
+import Notice from './Notice.jsx';
+import Slider from './Slider.jsx';
 import Data from '../data/Data.json';
 
 const Main = () => {
-  const galleryData = Data.galleryData;
-  const noticeData = Data.noticeData;
+  const {galleryData} = Data;
+  const {noticeData} = Data;
 
   return (
     <section className="main">

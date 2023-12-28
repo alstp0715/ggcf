@@ -14,6 +14,7 @@ const Slider = ({ galleryData }) => {
 
     return (
         <div className="item slider">
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
             <p className="title">갤러리</p>
             <div className="swiper-container">
                 <Swiper {...swiperParams}>
